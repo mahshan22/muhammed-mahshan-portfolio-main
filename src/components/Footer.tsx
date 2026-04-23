@@ -16,7 +16,7 @@ const Footer = () => (
           </a>
         </div>
         <p className="text-sm text-muted-foreground flex items-center gap-1">
-          Built with <Heart size={14} className="text-primary" /> by Huda
+          Built with <Heart size={14} className="text-primary" /> by Shaan
         </p>
       </div>
     </div>

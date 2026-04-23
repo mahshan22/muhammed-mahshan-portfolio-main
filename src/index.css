@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* 3D perspective */
+.perspective {
+  perspective: 1000px;
+}
+
+/* floating animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* particles */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: gold;
+  border-radius: 50%;
+  animation: floatParticle 5s infinite ease-in-out;
+}
+
+.particle:nth-child(3) { top: 20%; left: 10%; }
+.particle:nth-child(4) { bottom: 20%; right: 10%; }
+.particle:nth-child(5) { top: 50%; left: 50%; }
+
+@keyframes floatParticle {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@layer base {
+  :root {
+    --background: 216 50% 11%;
+    --foreground: 213 100% 93%;
+
+    --card: 217 46% 16%;
+    --card-foreground: 213 100% 93%;
+
+    --popover: 217 46% 16%;
+    --popover-foreground: 213 100% 93%;
+
+    --primary: 51 100% 50%;
+    --primary-foreground: 216 50% 11%;
+
+    --secondary: 217 46% 16%;
+    --secondary-foreground: 213 100% 93%;
+
+    --muted: 217 30% 22%;
+    --muted-foreground: 213 40% 65%;
+
+    --accent: 51 100% 50%;
+    --accent-foreground: 216 50% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 30% 22%;
+    --input: 217 30% 22%;
+    --ring: 51 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 216 50% 11%;
+    --sidebar-foreground: 213 100% 93%;
+    --sidebar-primary: 51 100% 50%;
+    --sidebar-primary-foreground: 216 50% 11%;
+    --sidebar-accent: 217 46% 16%;
+    --sidebar-accent-foreground: 213 100% 93%;
+    --sidebar-border: 217 30% 22%;
+    --sidebar-ring: 51 100% 50%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(216 50% 11%) 0%, hsl(217 46% 16%) 50%, hsl(216 50% 14%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(217 46% 16%) 0%, hsl(217 46% 13%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(51 100% 50%) 0%, hsl(40 100% 55%) 100%);
+    --shadow-card: 0 8px 32px hsl(216 50% 5% / 0.4);
+    --shadow-glow: 0 0 20px hsl(51 100% 50% / 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-bold text-foreground mb-3;
+  }
+  .section-subtitle {
+    @apply text-muted-foreground text-lg mb-12;
+  }
+  .gold-text {
+    @apply text-primary;
+  }
+  .card-glass {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    @apply border border-border rounded-xl;
+  }
+  .gold-gradient-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .btn-gold {
+    background: var(--gradient-gold);
+    @apply text-background font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105;
+  }
+  .btn-outline-gold {
+    @apply border border-primary text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-primary hover:text-background hover:scale-105;
+  }
+}

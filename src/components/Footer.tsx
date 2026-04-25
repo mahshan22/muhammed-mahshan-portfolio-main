@@ -7,14 +7,7 @@ const Footer = () => (
         <p className="text-sm text-muted-foreground">
           © 2026 Muhammed Mahshan. All rights reserved.
         </p>
-        <div className="flex items-center gap-4">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-1" aria-label="LinkedIn">
-            <ExternalLink size={14} /> LinkedIn
-          </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-1" aria-label="GitHub">
-            <ExternalLink size={14} /> GitHub
-          </a>
-        </div>
+       
         <p className="text-sm text-muted-foreground flex items-center gap-1">
           Built with <Heart size={14} className="text-primary" /> by Shaan
         </p>

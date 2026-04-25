@@ -56,24 +56,24 @@ const Contact = () => {
                   </div>
                 </div>
               ))}
-              <div className="flex gap-4 pt-4">
-  <a href="https://wa.me/916235504714" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <div className="flex gap-4 pt-4 flex-wrap">
+  <a href="https://wa.me/916235504714" target="_blank" className="social-icon whatsapp" data-tooltip="WhatsApp">
     <FaWhatsapp />
   </a>
 
-  <a href="https://instagram.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <a href="https://instagram.com/YOUR_USERNAME" target="_blank" className="social-icon instagram" data-tooltip="Instagram">
     <FaInstagram />
   </a>
 
-  <a href="https://facebook.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <a href="https://facebook.com/YOUR_USERNAME" target="_blank" className="social-icon facebook" data-tooltip="Facebook">
     <FaFacebook />
   </a>
 
-  <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" className="social-icon linkedin" data-tooltip="LinkedIn">
     <FaLinkedin />
   </a>
 
-  <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+  <a href="https://github.com/YOUR_USERNAME" target="_blank" className="social-icon github" data-tooltip="GitHub">
     <FaGithub />
   </a>
 </div>

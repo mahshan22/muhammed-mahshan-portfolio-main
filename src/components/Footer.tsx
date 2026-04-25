@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <div className="flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          © 2026 Muhammede Mahshan. All rights reserved.
+          © 2026 Muhammed Mahshan. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <a href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm flex items-center gap-1" aria-label="LinkedIn">

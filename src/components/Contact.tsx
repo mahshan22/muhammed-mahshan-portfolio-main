@@ -61,7 +61,7 @@ const Contact = () => {
     <FaWhatsapp />
   </a>
 
-  <a href="https://instagram.com/YOUR_USERNAME" target="_blank" className="social-icon instagram" data-tooltip="Instagram">
+  <a href="https://instagram.com/#" target="_blank" className="social-icon instagram" data-tooltip="Instagram">
     <FaInstagram />
   </a>
 
@@ -69,11 +69,11 @@ const Contact = () => {
     <FaFacebook />
   </a>
 
-  <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" className="social-icon linkedin" data-tooltip="LinkedIn">
+  <a href="https://linkedin.com/in/muhammed-mahshan-29565b393/" target="_blank" className="social-icon linkedin" data-tooltip="LinkedIn">
     <FaLinkedin />
   </a>
 
-  <a href="https://github.com/YOUR_USERNAME" target="_blank" className="social-icon github" data-tooltip="GitHub">
+  <a href="https://github.com/mahshan22" target="_blank" className="social-icon github" data-tooltip="GitHub">
     <FaGithub />
   </a>
 </div>

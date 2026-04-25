@@ -2,6 +2,7 @@ import { Phone, Mail, MapPin, Send } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { useState } from "react";
 import emailjs from "@emailjs/browser"; // ✅ added
+import { FaWhatsapp, FaInstagram, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -55,6 +56,27 @@ const Contact = () => {
                   </div>
                 </div>
               ))}
+              <div className="flex gap-4 pt-4">
+  <a href="https://wa.me/916235504714" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <FaWhatsapp />
+  </a>
+
+  <a href="https://instagram.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <FaInstagram />
+  </a>
+
+  <a href="https://facebook.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <FaFacebook />
+  </a>
+
+  <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <FaLinkedin />
+  </a>
+
+  <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="social-icon">
+    <FaGithub />
+  </a>
+</div>
             </div>
           </AnimatedSection>
 

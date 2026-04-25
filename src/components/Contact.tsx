@@ -41,7 +41,7 @@ const Contact = () => {
           <AnimatedSection>
             <div className="space-y-6">
               {[
-                { icon: Phone, label: "Phone", value: "623554714" },
+                { icon: Phone, label: "Phone", value: "6235504714" },
                 { icon: Mail, label: "Email", value: "mohammedshaan068@gmail.com" },
                 { icon: MapPin, label: "Address", value: "Kasaragod, Kerala" },
               ].map((item, i) => (

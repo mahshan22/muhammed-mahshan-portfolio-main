@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, Mail } from "lucide-react";
 import HeroImage from "./HeroImage";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => (
   <section
@@ -37,9 +38,26 @@ const Hero = () => (
             Muhammed <span className="gold-gradient-text">Mahshan</span>
           </h1>
 
-          <h2 className="font-heading font-semibold text-xl md:text-2xl text-muted-foreground mb-6">
-            Web Developer & BCA Student
-          </h2>
+        <p className="text-lg md:text-xl font-medium flex items-center gap-2">
+  
+  <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-blue-500 bg-clip-text text-transparent animate-pulse drop-shadow-[0_0_10px_rgba(255,215,0,0.6)]">
+    <TypeAnimation
+      sequence={[
+        "Web Developer",
+        2000,
+        "MERN Stack Learner",
+        2000,
+        "Frontend Developer",
+        2000,
+      ]}
+      speed={50}
+      repeat={Infinity}
+      cursor={false}
+    />
+  </span>
+
+  <span className="text-yellow-400 animate-pulse">|</span>
+</p>
 
           <p className="text-muted-foreground text-base md:text-lg max-w-xl mb-10 leading-relaxed">
             A motivated and detail-oriented BCA graduate with a strong foundation in 

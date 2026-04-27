@@ -100,19 +100,6 @@
   animation: float 4s ease-in-out infinite;
 }
 
-/* particles */
-.particle {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  background: gold;
-  border-radius: 50%;
-  animation: floatParticle 5s infinite ease-in-out;
-}
-
-.particle:nth-child(3) { top: 20%; left: 10%; }
-.particle:nth-child(4) { bottom: 20%; right: 10%; }
-.particle:nth-child(5) { top: 50%; left: 50%; }
 
 @keyframes floatParticle {
   0% { transform: translateY(0px); }
@@ -212,5 +199,37 @@
   }
   .btn-outline-gold {
     @apply border border-primary text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300 hover:bg-primary hover:text-background hover:scale-105;
+  }
+
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.animate-bubble {
+  animation: bubble linear infinite;
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
   }
 }

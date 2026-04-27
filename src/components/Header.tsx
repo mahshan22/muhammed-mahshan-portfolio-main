@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navItems = ["Home", "About", "Education", "Skills", "Experience", "Contact"];
+const navItems = ["Home", "About", "Education", "Skills", "Experience", "Projects", "Contact"];
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
